@@ -16,6 +16,10 @@ body {
   box-sizing: border-box;
 }
 
+ul li{
+  list-style:none;
+}
+
 .container {
   height: 300px;
   margin: 0 auto;
@@ -41,34 +45,26 @@ body {
 }
 
 .section {
-  width: 541px;
   margin-left: auto;
   margin-right: auto;
-  display: flex;
-  justify-content: space-between;
   align-items: center;
+  justify-content: center;
 }
 
 .theme {
-  padding: 0;
+  padding:0;
   margin: 0;
   display: flex;
-  justify-content: space-between;
+  justify-content:space-between;
   align-items: center;
 }
 
 .first__section {
   display: flex;
   margin-bottom: 40px;
+  gap:334px;
 }
 
-/* [dark-theme="light"] {
-  background: url("../images/background.svg");
-}
-
-[dark-theme="dark"] {
-  background: url("../images/darkBack.jpg");
-} */
 
 #theme:checked ~ .theme__label {
   display: none;
@@ -89,10 +85,6 @@ body {
   display: none;
 }
 
-/* #theme:checked ~ .container {
-  background: url("../images/darkBack.jpg");
-  display: block;
-} */
 
 #theme:unchecked ~ .theme__label > .sun {
   display: block;
@@ -173,26 +165,22 @@ input[data-title]:hover::after {
   border-radius: 50%;
   border: 50% solid transparent;
 }
-/* .SectionLists {
-  flex-direction: column;
-} */
+
+
 .list {
-  gap: 5px;
-  display: flex;
-  flex-direction: column;
   background-color: white;
-  width: 540px;
-  border-radius: 5px;
-  height: 64px;
   align-items: center;
-  justify-content: start;
-  display: flex;
+  justify-content: center;
+  /* width: 540px; */
+  border-radius:5px;
+  height: 64px;
   padding-top: 24px;
   padding-bottom: 24px;
   padding-left: 24px;
-  border: 1px solid black !important;
-  font-family: "Josefin Sans", sans-serif;
+  border: 1px solid rgb(59, 58, 58)  !important;
+  font-family: "Josefin Sans", sans-serif; 
 }
+
 
 input[type="checkbox"] {
   appearance: none;
