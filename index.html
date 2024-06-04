@@ -33,16 +33,20 @@
           <template id="todoTemplate">
             <ul class="SectionLists">
               <li class="list">
-                <input type="checkbox" class="input" id="todoStatus" />
-                  <label
-                  class="text"
-                  for="class"
-                  class="todoTitle"
-                  id="todoTitle"
-                >
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                </label>
-                <button class="removeButton" id="todoRemoveButton">x</button>
+               <div class="todo__input">
+                <form class="form__input">
+                  <input type="checkbox" class="input" id="todoStatus" />
+                <label
+                class="text"
+                for="class"
+                class="todoTitle"
+                id="todoTitle"
+              >
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              </label>
+                </form>
+              <button class="removeButton" id="todoRemoveButton">x</button>
+               </div>
                 </div>
               </li>
             </ul>
