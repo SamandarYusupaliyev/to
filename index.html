@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- style css -->
+
+    <link rel="stylesheet" href="./css/style.css" />
+    <!-- normalize css -->
+    <link rel="stylesheet" href="./css/normalize.css" />
+    <title>ToDo</title>
+  </head>
+  <body>
+    <main>
+      <div class="container">
+        <section class="first__section section">
+          <h1 class="title">TODO</h1>
+          <div class="theme">
+            <input type="checkbox" id="theme" class="checkbox" />
+            <label for="theme" class="theme__label">
+              <img src="./images/moon.svg" alt="" class="moon" />
+              <img src="./images/sun.svg" alt="" class="sun" />
+            </label>
+          </div>
+        </section>
+        <section class="second__section section">
+          <form id="forma" class="form">
+            <input type="checkbox" class="input" />
+            <input type="text" placeholder="Create a new todo..." id="input" />
+          </form>
+        </section>
+        <section class="third__section section" id="tasks">
+          <template id="todoTemplate">
+            <!-- <ul class="SectionLists">
+              <li class="list">
+                <input type="checkbox" class="input" id="todoStatus" />
+                <label
+                  class="text"
+                  for="class"
+                  class="todoTitle"
+                  id="todoTitle"
+                >
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                </label>
+                <button class="removeButton" id="todoRemoveButton">x</button>
+              </li>
+            </ul> -->
+          </template>
+        </section>
+      </div>
+    </main>
+    <script src="./js/index.js" type="module"></script>
+  </body>
+</html>
